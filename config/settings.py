@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.startups',
     'apps.investors',
     'apps.found_and_org',
+    'apps.application',
 
     'rest_framework',
     'rest_framework.authtoken',
