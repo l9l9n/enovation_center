@@ -5,4 +5,10 @@ from .models import SupportingOrganization
 
 @admin.register(SupportingOrganization)
 class SupportingOrganizationAdmin(admin.ModelAdmin):
-    list_display = ('name', 'support_type')
+    list_display = ('name',
+                    'support_type',
+                    'support_conditions',
+                    'additional_files',
+                    'contacts',
+                    'register_date',
+                    )

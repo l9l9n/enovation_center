@@ -10,6 +10,7 @@ class SupportingOrganization(models.Model):
                                         blank=True,
                                         null=True,
                                         )
+    contacts = models.CharField(max_length=150, verbose_name="Контакты", null=True, blank=True)
     register_date = models.DateField(verbose_name="Дата регистрации", auto_now_add=True)
 
     class Meta:

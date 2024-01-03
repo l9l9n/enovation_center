@@ -5,4 +5,9 @@ from .models import SupportingOrganization
 class SupportingOrganizationSerializer(serializers.ModelSerializer):
     class Meta:
         model = SupportingOrganization
-        fields = '__all__'
+        fields = ('name',
+                  'support_type',
+                  'support_conditions',
+                  'additional_files',
+                  'contacts',
+                  )

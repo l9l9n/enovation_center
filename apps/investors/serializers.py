@@ -5,4 +5,9 @@ from .models import Investor
 class InvestorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Investor
-        fields = '__all__'
+        fields = ('name',
+                  'investment_area',
+                  'investment_size',
+                  'additional_files',
+                  'contacts',
+                  )

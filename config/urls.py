@@ -22,7 +22,12 @@ from config import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('startup/', include('apps.startups.urls')),
+    path('investor/', include('apps.investors.urls')),
+    path('supp-org/', include('apps.found_and_org.urls')),
+
     path('api-auth/', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),
     re_path(r'^auth/', include('djoser.urls.authtoken')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
